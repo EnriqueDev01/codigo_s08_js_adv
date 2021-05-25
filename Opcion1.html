@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opcion 1 - JS Clases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+<body>
+    <p><a href="./index.html">Inicio</a></p>    
+    <div class="container">
+        <header>
+            <p class="text-center fs-1 text-primary">Opcion 1</p>
+        </header>
+        <form class="row col-12 g-0 d-flex justify-content-center">
+            <div class="col-8">                            
+              <input type="text" class="form-control" id="txtInputTask" placeholder="Type your awesome task here...">
+            </div>            
+            <div class="col-auto">
+              <button class="btn btn-secondary" id="btnAddTask">Add Task</button>
+            </div>
+        </form>                          
+        <table class="table">
+            <thead>
+              <tr class="">
+                <th scope="col" class="col-1"></th>
+                <th scope="col" class="col-8"></th>
+                <th scope="col" class="col-1 ps-1">
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="ddprio" data-bs-toggle="dropdown">
+                            PRIO
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="ddprio">
+                            <li><button class="btn btn-sm btn-link">MINOR</button></li>
+                            <li><button class="btn btn-sm btn-link">MEDIUM</button></li>
+                            <li><button class="btn btn-sm btn-link">MAJOR</button></li>                            
+                        </ul>
+                    </div>
+                </th>
+                <th scope="col" class="col-1 ps-1">
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="ddurgency" data-bs-toggle="dropdown">
+                            URGENCY
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="ddurgency">
+                            <li><button class="btn btn-sm btn-link">tomorrow</button></li>
+                            <li><button class="btn btn-sm btn-link">today</button></li>
+                            <li><button class="btn btn-sm btn-link">has time</button></li>                            
+                        </ul>
+                    </div>
+                </th>                
+                <th scope="col" class="col-1 ps-1">
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="ddlength" data-bs-toggle="dropdown">
+                            LENGTH
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="ddlength">
+                            <li><button class="btn btn-sm btn-link">10m</button></li>
+                            <li><button class="btn btn-sm btn-link">30m</button></li>
+                            <li><button class="btn btn-sm btn-link">1h</button></li>
+                            <li><button class="btn btn-sm btn-link">break</button></li>
+                        </ul>
+                    </div>
+                </th> 
+              </tr>
+            </thead>
+            <tbody id="tasks">
+                                        
+            </tbody>
+          </table>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="./js/Opcion1.js"></script>
+</body>
+</html>
